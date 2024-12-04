@@ -11,9 +11,7 @@ from datetime import datetime
 import logging
 
 # Load environment variables
-dotenv_path = find_dotenv()
-load_dotenv(dotenv_path)
-openai_api_key = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 openai.api_key = openai_api_key
 
 # Initialize logging for error tracking
