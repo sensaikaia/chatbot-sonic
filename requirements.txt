@@ -1,8 +1,45 @@
-streamlit==1.25.0
-openai==0.28.1
-python-dotenv==1.0.0
-PyPDF2==3.0.1
-python-docx==0.8.11
-python-pptx==0.6.21
-langchain-openai==0.0.5
-langchain-community==0.0.5
+
+None selected 
+
+Skip to content
+Using NUCES-FAST Mail with screen readers
+
+Conversations
+sonicScout
+External
+Inbox
+
+Arham Nasir <arhamnasir90@gmail.com>
+Attachments
+Wed, Dec 4, 2:23 AM (23 hours ago)
+to me
+
+
+ 4 Attachments
+  •  Scanned by Gmail
+# Streamlit for the application UI
+streamlit
+
+# OpenAI API for LLM
+openai
+
+# Environment variable management
+python-dotenv
+
+# Document processing libraries
+PyPDF2
+python-docx
+python-pptx
+
+# LangChain core and related modules
+langchain-openai
+langchain-community
+
+# Additional recommended libraries
+langchain          # Core LangChain functionalities
+pydantic           # Validation library used in LangChain (ensure compatibility)
+faiss-cpu          # Vector store backend for embeddings (if not using Pinecone/Weaviate)
+tiktoken           # Tokenization for OpenAI models
+sentence-transformers  # Alternative embeddings provider
+numpy              # Required for numerical operations in vector stores
+scikit-learn       # Used for some LangChain utilities like clustering
